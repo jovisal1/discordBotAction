@@ -17,3 +17,4 @@ client.on("ready", () => {
 });
 
 client.login(discord_token);
+core.ExitCode(0);
