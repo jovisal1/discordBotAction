@@ -1,0 +1,13 @@
+name: main_workflow
+on: [push]
+jobs:
+  Linter_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout_codigo
+        uses: actions/checkout@v2
+      - name: Send discord message
+        uses: ./.github/actions/discord/
+        with:
+          discord_token: ${{ secrets.DISCORD_TOKEN }}
+          id_channel: ${{ secrets.CHANNEL_ID }}
