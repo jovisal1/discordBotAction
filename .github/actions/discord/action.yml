@@ -1,0 +1,15 @@
+name: "discord"
+description: "Discord Bot"
+inputs:
+  discord_token:
+    description: "discord_token"
+    required: true
+  id_channel:
+    description: "id_channel"
+    required: true
+outputs:
+  respuesta:
+    description: "Mensaje enviado al canal de discord!"
+runs:
+  using: "node12"
+  main: "index.js"
