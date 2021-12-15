@@ -12,9 +12,9 @@ client.on("ready", () => {
     .fetch(id_channel)
     .then((channel) => {
       channel.send(`Vamos que nos vamos desde nodeaaaa`);
+      process.exit(0);
     })
     .catch((err) => console.log("Could not find the channel."));
 });
 
 client.login(discord_token);
-process.exit(0);
