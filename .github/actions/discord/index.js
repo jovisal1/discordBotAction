@@ -11,7 +11,7 @@ client.on("ready", () => {
   client.channels
     .fetch(id_channel)
     .then((channel) => {
-      channel.send(`Vamos que nos vamos desde nodeaaaa`);
+      channel.send(`Vamos que nos vamos desde node`);
     })
     .catch((err) => console.log("Could not find the channel."));
 });
