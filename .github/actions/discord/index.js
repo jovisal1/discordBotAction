@@ -17,4 +17,4 @@ client.on("ready", () => {
 });
 
 client.login(discord_token);
-core.setOutput(0);
+process.exit(0);
