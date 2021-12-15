@@ -6,8 +6,11 @@ jobs:
     steps:
       - name: checkout_codigo
         uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
       - name: Send discord message
         uses: ./.github/actions/discord/
         with:
-          discord_token: ${{ secrets.DISCORD_TOKEN }}
+          discord_token: ${{ secrets.BOT_TOKEN }}
           id_channel: ${{ secrets.CHANNEL_ID }}
